@@ -1,0 +1,8 @@
+<% |String $os_name, 
+    String $os_version, 
+    String $server_name
+| -%>
+
+ This host is <%= $server_name %>, and running <%= "${os_name}.${os_version}" %>.
+
+
