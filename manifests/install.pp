@@ -1,12 +1,9 @@
-# @summary A short summary of the purpose of this class
+# @summary
 #
-# A description of what this class does
+# Change the content in motd config file
 #
-# @example
 #   include motd::install
-class motd::install (
-  $content = $motd::params::content
-) inherits motd::params {
+class motd::install {
 
   file { '/etc/motd':
     ensure  => file,
