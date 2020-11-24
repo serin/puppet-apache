@@ -4,9 +4,7 @@
 #
 # @example
 #   include motd::install
-class motd::install (
-  $content = $motd::params::content
-) inherits motd::params {
+class motd::install {
 
   file { '/etc/motd':
     ensure  => file,
