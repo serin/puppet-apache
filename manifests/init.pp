@@ -1,4 +1,6 @@
-class motd {
+class motd (
+  String $content,
+) {
 
   include motd::install
 

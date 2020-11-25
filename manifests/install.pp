@@ -7,7 +7,7 @@ class motd::install {
 
   file { '/etc/motd':
     ensure  => file,
-    content => $content,
+    content => $motd::content,
   }
 
 }
